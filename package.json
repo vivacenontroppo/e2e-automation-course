@@ -2,6 +2,7 @@
   "name": "EACourseApp",
   "version": "1.0.0",
   "scripts": {
+    "test": "protractor ./Tests/conf.js",
     "start": "concurrently \"npm run tsc:w\" \"npm run server\" ",
     "server": "node node_modules/ng2f-server/server.js",
     "tsc": "tsc",
@@ -25,9 +26,15 @@
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
     "@angular/upgrade": "~2.2.0",
+    "@types/jasmine": "^2.8.8",
+    "@types/protractor": "^4.0.0",
+    "@types/q": "^1.5.0",
+    "@types/selenium-webdriver": "^3.0.10",
     "core-js": "~2.4.1",
+    "jasmine-standalone": "^1.3.1",
     "ng2f-bootstrap": "~0.0.4",
     "ng2f-server": "~0.2.3",
+    "node": "^10.9.0",
     "reflect-metadata": "~0.1.8",
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.40",
@@ -35,10 +42,13 @@
     "zone.js": "~0.6.26"
   },
   "devDependencies": {
-    "concurrently": "2.2.0",
-    "typescript": "~2.0.3",
     "@types/core-js": "~0.9.34",
-    "@types/node": "~6.0.46"
+    "@types/node": "~6.0.46",
+    "concurrently": "2.2.0",
+    "jasmine": "^3.2.0",
+    "jasminewd2": "^2.2.0",
+    "protractor": "^5.4.0",
+    "typescript": "~2.0.3"
   },
   "repository": {}
 }
